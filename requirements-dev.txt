@@ -1,0 +1,11 @@
+# Shared virtual environment for the Python services (identity, brand-check, campaigns).
+# Keep in sync with each service's requirements.txt.
+-r identity/requirements.txt
+-r brand-check/requirements.txt
+-r campaigns/requirements.txt
+
+pytest==9.1.1
+respx==0.23.1
+
+# Local process runner for `make dev`
+honcho==2.0.0

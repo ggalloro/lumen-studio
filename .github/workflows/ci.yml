@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [identity, brand-check, campaigns]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
+      - run: ../.venv/bin/python -m pytest -q
+        working-directory: ${{ matrix.service }}
+
+  assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - run: ./mvnw -q test
+        working-directory: assets
+
+  rights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "11"
+          cache: maven
+      - run: ./mvnw -q test
+        working-directory: rights
+
+  renditions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: renditions/go.mod
+          cache-dependency-path: renditions/go.sum
+      - run: go vet ./... && go test ./...
+        working-directory: renditions
+
+  node:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [review, studio-web]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ${{ matrix.service }}/package-lock.json
+      - run: npm ci && npm run typecheck && npm test
+        working-directory: ${{ matrix.service }}
+

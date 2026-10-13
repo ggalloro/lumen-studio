@@ -1,0 +1,111 @@
+x-common-env: &common-env
+  TOKEN_SECRET: ${TOKEN_SECRET:-dev-secret-change-me}
+  INTERNAL_TOKEN: ${INTERNAL_TOKEN:-dev-internal-token}
+  DATA_DIR: /data
+  IDENTITY_URL: http://identity:8081
+  ASSETS_URL: http://assets:8082
+  RENDITIONS_URL: http://renditions:8083
+  REVIEW_URL: http://review:8084
+  BRAND_URL: http://brand-check:8085
+  CAMPAIGNS_URL: http://campaigns:8086
+  RIGHTS_URL: http://rights:8087
+
+x-healthcheck: &healthcheck
+  interval: 5s
+  timeout: 3s
+  retries: 30
+
+services:
+  identity:
+    build: ./identity
+    environment:
+      <<: *common-env
+      PORT: 8081
+    volumes: [identity-data:/data]
+    ports: ["8081:8081"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8081/health')"]
+
+  assets:
+    build: ./assets
+    environment:
+      <<: *common-env
+      PORT: 8082
+      ASSETS_SELF_URL: http://assets:8082
+    volumes: [assets-data:/data]
+    ports: ["8082:8082"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/localhost/8082 && printf 'GET /health HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q ok <&3"]
+
+  renditions:
+    build: ./renditions
+    environment:
+      <<: *common-env
+      PORT: 8083
+    ports: ["8083:8083"]
+
+  review:
+    build: ./review
+    environment:
+      <<: *common-env
+      PORT: 8084
+    volumes: [review-data:/data]
+    ports: ["8084:8084"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8084/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+
+  brand-check:
+    build: ./brand-check
+    environment:
+      <<: *common-env
+      PORT: 8085
+    volumes: [brand-data:/data]
+    ports: ["8085:8085"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8085/health')"]
+
+  campaigns:
+    build: ./campaigns
+    environment:
+      <<: *common-env
+      PORT: 8086
+    volumes: [campaigns-data:/data]
+    ports: ["8086:8086"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8086/health')"]
+
+  rights:
+    build: ./rights
+    environment:
+      <<: *common-env
+      PORT: 8087
+    volumes: [rights-data:/data]
+    ports: ["8087:8087"]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/localhost/8087 && printf 'GET /health HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q ok <&3"]
+
+  studio-web:
+    build: ./studio-web
+    ports: ["3000:3000"]
+    depends_on:
+      identity: {condition: service_healthy}
+      assets: {condition: service_healthy}
+      renditions: {condition: service_started}
+      review: {condition: service_healthy}
+      brand-check: {condition: service_healthy}
+      campaigns: {condition: service_healthy}
+      rights: {condition: service_healthy}
+
+volumes:
+  identity-data:
+  assets-data:
+  review-data:
+  brand-data:
+  campaigns-data:
+  rights-data:

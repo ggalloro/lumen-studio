@@ -1,0 +1,144 @@
+{
+  "assets": [
+    {
+      "key": "summit-rain-shell",
+      "title": "Summit rain shell",
+      "description": "Launch image for the Summit waterproof shell.",
+      "tags": ["jacket", "rain", "fall"],
+      "versions": [
+        {
+          "filename": "summit-rain-shell.jpg",
+          "alt_text": "Hiker in a red rain shell on wet granite in light rain, pine forest behind.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel advertising photo: a hiker wearing a deep red waterproof rain shell with the hood up, standing on wet granite rocks in light rain, dark pine forest and mist behind, muted natural colors, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "ridge-jacket-v3",
+      "title": "Ridge Jacket hero (new version)",
+      "description": "Version 3 for Ridge Jacket hero with the face lit as requested in review.",
+      "tags": ["jacket", "fall", "hero"],
+      "versions": [
+        {
+          "filename": "ridge-jacket-hero-v3.jpg",
+          "alt_text": "Hiker in a red insulated jacket on a rocky ridge, face in soft light, pine valley behind.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel advertising photo, medium close-up: a hiker wearing a deep red insulated puffer jacket with a clearly visible front zipper, face evenly lit by soft morning light, granite rocks, blurred pine forest valley behind, muted natural colors, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "basecamp-tent-dawn",
+      "title": "Basecamp tent at dawn",
+      "description": "New version for Basecamp tent at dusk, shot at dawn.",
+      "tags": ["tent", "camping", "fall"],
+      "versions": [
+        {
+          "filename": "basecamp-tent-dawn.jpg",
+          "alt_text": "Dark green tent by a calm lake at dawn with mist on the water.",
+          "aspect": "3:2",
+          "prompt": "Outdoor gear advertising photo: a dark pine-green three-person dome tent next to a calm mountain lake at dawn, low mist on the water, pine trees and granite boulders, soft pale light, photorealistic, no people, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "canyon-panorama",
+      "title": "Canyon rim panorama",
+      "description": "Very wide landscape for web banners and email headers.",
+      "tags": ["landscape", "banner"],
+      "versions": [
+        {
+          "filename": "canyon-panorama.jpg",
+          "alt_text": "Two hikers small on a canyon rim with a wide valley at sunset.",
+          "aspect": "21:9",
+          "prompt": "Ultra wide outdoor landscape photo: two small hikers with backpacks walking along a granite canyon rim on the left third, a wide forested valley below, warm low sun, muted earthy colors, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "climber-portrait",
+      "title": "Climber portrait",
+      "description": "Tall portrait for Stories. The climber's head is near the top of the frame.",
+      "tags": ["climbing", "portrait"],
+      "versions": [
+        {
+          "filename": "climber-portrait.jpg",
+          "alt_text": "Climber in a red helmet reaching up a granite wall, seen from below.",
+          "aspect": "9:16",
+          "prompt": "Vertical outdoor sports photo: a rock climber wearing a red helmet and grey jacket reaching up a granite wall, the climber's head and hands in the top quarter of the frame, rope hanging below, blue-grey sky, muted natural colors, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "family-snow-trail",
+      "title": "Family snow trail",
+      "description": "Winter teaser with a family on a snowy trail.",
+      "tags": ["lifestyle", "winter"],
+      "versions": [
+        {
+          "filename": "family-snow-trail.jpg",
+          "alt_text": "Parents and two children walking on a snowy forest trail.",
+          "aspect": "3:2",
+          "prompt": "Outdoor lifestyle photo: two parents and two children in red and grey winter jackets walking on a snowy forest trail among pine trees, seen from the side, soft overcast light, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "neon-festival-tee",
+      "title": "Festival tee promo",
+      "description": "Agency concept for a summer festival tee. BRIGHT and LOUD!!!",
+      "tags": ["tee", "promo", "agency"],
+      "versions": [
+        {
+          "filename": "neon-festival-tee.jpg",
+          "alt_text": "Person in a hot pink tee dancing under lime green and purple stage lights.",
+          "aspect": "4:5",
+          "prompt": "Bold party advertising photo: a person in a hot pink t-shirt dancing at a music festival under intense lime green and purple stage lights, saturated neon colors, confetti, photorealistic, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "pastel-picnic",
+      "title": "Lakeside picnic",
+      "description": "Spring picnic image from a partner shoot.",
+      "tags": ["lifestyle", "spring"],
+      "versions": [
+        {
+          "filename": "pastel-picnic.jpg",
+          "alt_text": "Picnic blanket with a thermos and backpack by a lake in pastel light.",
+          "aspect": "3:2",
+          "prompt": "Lifestyle product photo: a picnic blanket in pastel lavender and mint by a calm lake, a grey thermos and a small red backpack on it, soft hazy pastel sunset sky, photorealistic, no people, no text, no logos."
+        }
+      ]
+    },
+    {
+      "key": "compass-on-photo",
+      "title": "Compass mark co-branded banner",
+      "description": "Partner banner with the compass mark placed over a photo.",
+      "tags": ["logo", "partner"],
+      "versions": [
+        {
+          "filename": "compass-mark-on-photo.jpg",
+          "alt_text": "Red compass rose mark placed over a busy forest photo.",
+          "aspect": "16:9",
+          "prompt": "Marketing banner: a busy, detailed autumn forest photo filling the frame, with a simple flat geometric four-point compass rose logo in deep crimson red placed in the center over the trees, the logo small and crowded by branches, no text."
+        }
+      ]
+    },
+    {
+      "key": "beacon-headlamp-v2",
+      "title": "Beacon headlamp close-up",
+      "description": "New version for Beacon headlamp, closer on the product.",
+      "tags": ["headlamp", "product", "fall"],
+      "versions": [
+        {
+          "filename": "beacon-headlamp-closeup.jpg",
+          "alt_text": "Close-up of a compact headlamp with a warm beam on a hiker's forehead at dusk.",
+          "aspect": "4:5",
+          "prompt": "Outdoor gear close-up photo: a compact headlamp with a warm beam worn by a hiker at dusk, pine forest blurred behind, deep blue-grey tones with a warm light accent, photorealistic, no text, no logos."
+        }
+      ]
+    }
+  ]
+}

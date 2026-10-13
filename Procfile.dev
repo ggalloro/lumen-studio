@@ -1,0 +1,8 @@
+identity:    cd identity && PORT=8081 ../.venv/bin/uvicorn app.main:app --port 8081
+assets:      cd assets && PORT=8082 java -jar target/assets.jar
+renditions:  cd renditions && PORT=8083 go run .
+review:      cd review && PORT=8084 npm run dev
+brand-check: cd brand-check && PORT=8085 ../.venv/bin/uvicorn app.main:app --port 8085
+campaigns:   cd campaigns && PORT=8086 ../.venv/bin/flask --app app run --port 8086
+rights:      cd rights && PORT=8087 ${JAVA11_HOME:-$(ls -d /usr/lib/jvm/java-11-openjdk-* | head -1)}/bin/java -jar target/rights.jar
+studio-web:  cd studio-web && PORT=3000 npm run dev

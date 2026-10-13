@@ -1,0 +1,581 @@
+{
+  "brand_kit": {
+    "name": "Northwind Outdoor",
+    "palette": [
+      {
+        "name": "Summit Red",
+        "hex": "#C8102E"
+      },
+      {
+        "name": "Pine",
+        "hex": "#1F4D3A"
+      },
+      {
+        "name": "Granite",
+        "hex": "#4A4F55"
+      },
+      {
+        "name": "Glacier",
+        "hex": "#DCE6EC"
+      },
+      {
+        "name": "Ember",
+        "hex": "#F2A900"
+      },
+      {
+        "name": "Bark",
+        "hex": "#6B4F3A"
+      },
+      {
+        "name": "Trail Tan",
+        "hex": "#C9B79C"
+      },
+      {
+        "name": "Sky",
+        "hex": "#8DB3CF"
+      }
+    ],
+    "fonts": [
+      "Source Sans 3",
+      "Source Serif 4"
+    ],
+    "tone_of_voice": "Calm, practical and grounded. We talk like an experienced guide: short sentences, concrete details about materials and conditions, no hype, no exclamation marks, no all-caps shouting. Invite people outdoors without pressure.",
+    "logo_rules": "The Northwind compass mark appears in Summit Red or white only. Keep clear space around the mark equal to its height. Never place the mark on busy photographic areas, never stretch, rotate or add effects. Minimum size 48 px.",
+    "palette_tolerance": 18
+  },
+  "assets": [
+    {
+      "key": "ridge-jacket",
+      "title": "Ridge Jacket hero",
+      "description": "Hero image for the Ridge insulated jacket, fall launch.",
+      "tags": [
+        "jacket",
+        "fall",
+        "hero"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "ridge-jacket-hero.jpg",
+          "alt_text": "Hiker in a red insulated jacket on a rocky ridge above a pine valley at dawn.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel advertising photo: a hiker wearing a deep red insulated puffer jacket with a visible front zipper, standing on a granite ridge, pine forest valley below, soft dawn light, muted natural colors, photorealistic, no text, no logos."
+        },
+        {
+          "filename": "ridge-jacket-hero-v2.jpg",
+          "alt_text": "Hiker in a red insulated jacket on a rocky ridge, framed closer, pine valley behind.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel advertising photo, medium close-up: a hiker wearing a deep red insulated puffer jacket with a clearly visible front zipper and chest pocket, granite rocks, blurred pine forest valley behind, overcast soft light, muted natural colors, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind in-house studio",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": null,
+        "model_release_required": true,
+        "model_release_on_file": true,
+        "notes": ""
+      }
+    },
+    {
+      "key": "basecamp-tent",
+      "title": "Basecamp tent at dusk",
+      "description": "Lifestyle shot for the Basecamp 3 tent.",
+      "tags": [
+        "tent",
+        "camping",
+        "fall"
+      ],
+      "owner": "ana@northwind.example",
+      "versions": [
+        {
+          "filename": "basecamp-tent-dusk.jpg",
+          "alt_text": "Dark green tent glowing from inside at dusk next to a lake, pine trees around.",
+          "aspect": "3:2",
+          "prompt": "Outdoor gear advertising photo: a dark pine-green three-person dome tent lit warmly from inside at dusk, next to a calm mountain lake, pine trees, granite boulders, deep blue-grey sky, photorealistic, no people, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind in-house studio",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": null,
+        "model_release_required": false,
+        "model_release_on_file": false,
+        "notes": ""
+      }
+    },
+    {
+      "key": "trail-boots",
+      "title": "Granite trail boots",
+      "description": "Product detail shot of the Granite mid hiking boots.",
+      "tags": [
+        "boots",
+        "footwear",
+        "product"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "granite-trail-boots.jpg",
+          "alt_text": "Brown leather hiking boots with grey soles on a mossy rock.",
+          "aspect": "1:1",
+          "prompt": "Product photo of a pair of brown leather mid-height hiking boots with grey rubber soles and red laces, resting on a mossy granite rock, shallow depth of field, earthy tones, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind in-house studio",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": null,
+        "model_release_required": false,
+        "model_release_on_file": false,
+        "notes": ""
+      }
+    },
+    {
+      "key": "sentier-ete",
+      "title": "Sentier d'été trail run",
+      "description": "Summer trail running image reused for the early fall campaign in Quebec.",
+      "tags": [
+        "running",
+        "trail",
+        "quebec"
+      ],
+      "owner": "ana@northwind.example",
+      "versions": [
+        {
+          "filename": "sentier-été.jpg",
+          "alt_text": "Trail runner on a dirt path through birch and pine forest in late summer.",
+          "aspect": "3:2",
+          "prompt": "Outdoor sports advertising photo: a trail runner in a grey shirt and tan shorts running on a narrow dirt path through birch and pine forest, late summer golden light, photorealistic, motion, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "licensed",
+        "licensor": "Coop Photo Sentiers",
+        "channels": [
+          "instagram_square",
+          "story"
+        ],
+        "valid_from": "2026-06-01",
+        "expires_on": "2027-05-31",
+        "model_release_required": true,
+        "model_release_on_file": true,
+        "notes": "Licensed for social channels in Canada and the US."
+      }
+    },
+    {
+      "key": "summit-pack",
+      "title": "Summit 32 backpack",
+      "description": "Studio product shot of the Summit 32 daypack.",
+      "tags": [
+        "backpack",
+        "product"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "summit-32-pack.jpg",
+          "alt_text": "Red and charcoal daypack on a light grey studio background.",
+          "aspect": "1:1",
+          "prompt": "Studio product photo of a 32 liter hiking daypack in deep red with charcoal grey panels and straps, three-quarter view, on a seamless light grey background, soft shadows, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind in-house studio",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": null,
+        "model_release_required": false,
+        "model_release_on_file": false,
+        "notes": ""
+      }
+    },
+    {
+      "key": "ember-flask",
+      "title": "Ember insulated flask",
+      "description": "Lifestyle shot of the Ember flask by a campfire.",
+      "tags": [
+        "flask",
+        "camping",
+        "product"
+      ],
+      "owner": "ana@northwind.example",
+      "versions": [
+        {
+          "filename": "ember-flask-campfire.jpg",
+          "alt_text": "Amber yellow insulated flask on a log beside a small campfire.",
+          "aspect": "4:5",
+          "prompt": "Outdoor gear photo: an amber-yellow insulated steel flask standing on a weathered log next to a small campfire, pine forest at blue hour, warm firelight, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind in-house studio",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": null,
+        "model_release_required": false,
+        "model_release_on_file": false,
+        "notes": ""
+      }
+    },
+    {
+      "key": "glacier-fleece",
+      "title": "Glacier fleece layering",
+      "description": "Layering story for the Glacier fleece.",
+      "tags": [
+        "fleece",
+        "fall",
+        "layering"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "glacier-fleece.jpg",
+          "alt_text": "Person in a pale blue fleece zipping up beside a glacier lake.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel photo: a person wearing a pale glacier-blue fleece jacket zipping it up, standing beside a turquoise-grey glacier lake with snowy mountains behind, cool overcast light, photorealistic, no text, no logos."
+        },
+        {
+          "filename": "glacier-fleece-v2.jpg",
+          "alt_text": "Person in a pale blue fleece under an open red shell beside a glacier lake.",
+          "aspect": "4:5",
+          "prompt": "Outdoor apparel photo: a person wearing a pale glacier-blue fleece under an open deep red shell jacket, beside a grey glacier lake with snowy mountains behind, cool overcast light, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "licensed",
+        "licensor": "Glacier Agency",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-03-01",
+        "expires_on": "2027-02-28",
+        "model_release_required": true,
+        "model_release_on_file": true,
+        "notes": ""
+      }
+    },
+    {
+      "key": "family-hike",
+      "title": "Family fall hike",
+      "description": "Wide lifestyle image of a family hike for the campaign landing page.",
+      "tags": [
+        "lifestyle",
+        "fall",
+        "hero"
+      ],
+      "owner": "ana@northwind.example",
+      "versions": [
+        {
+          "filename": "family-fall-hike.jpg",
+          "alt_text": "Family of four hiking a forest trail with orange and yellow fall foliage.",
+          "aspect": "3:2",
+          "prompt": "Outdoor lifestyle photo: a family of four with backpacks hiking a forest trail, fall foliage in muted orange, ochre and brown, pine trees mixed in, soft afternoon light, seen from behind, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "licensed",
+        "licensor": "Trailside Stock",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": "2027-12-31",
+        "model_release_required": true,
+        "model_release_on_file": false,
+        "notes": "Release requested from the agency for the two children."
+      }
+    },
+    {
+      "key": "compass-logo",
+      "title": "Compass mark",
+      "description": "Primary brand mark for co-branded placements.",
+      "tags": [
+        "logo",
+        "brand"
+      ],
+      "owner": "priya@northwind.example",
+      "versions": [
+        {
+          "filename": "northwind-compass-mark.jpg",
+          "alt_text": "Red compass rose mark on white.",
+          "aspect": "1:1",
+          "prompt": "Minimal flat vector logo mark: a simple geometric compass rose with four points, solid deep crimson red on a plain white background, centered, lots of empty space, no text, no gradients."
+        }
+      ],
+      "rights": {
+        "license_type": "owned",
+        "licensor": "Northwind brand team",
+        "channels": [
+          "all"
+        ],
+        "valid_from": "2020-01-01",
+        "expires_on": null,
+        "model_release_required": false,
+        "model_release_on_file": false,
+        "notes": ""
+      }
+    },
+    {
+      "key": "neon-night-run",
+      "title": "Night run promo",
+      "description": "Agency concept for a night running promo. AMAZING ENERGY!!!",
+      "tags": [
+        "running",
+        "promo",
+        "agency"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "night-run-promo.jpg",
+          "alt_text": "Runner under bright magenta and cyan neon lights in a city at night.",
+          "aspect": "4:5",
+          "prompt": "Bold urban advertising photo: a runner sprinting through a city street at night under intense hot magenta and electric cyan neon lights, saturated colors, purple haze, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "licensed",
+        "licensor": "Night Owl Creative",
+        "channels": [
+          "story"
+        ],
+        "valid_from": "2026-01-01",
+        "expires_on": "2026-09-30",
+        "model_release_required": true,
+        "model_release_on_file": true,
+        "notes": "Agency concept, test license only."
+      }
+    },
+    {
+      "key": "lakeside-tee",
+      "title": "Lakeside tee",
+      "description": "Casual tee shot for the end-of-season sale.",
+      "tags": [
+        "tee",
+        "sale"
+      ],
+      "owner": "ana@northwind.example",
+      "versions": [
+        {
+          "filename": "lakeside-tee.jpg",
+          "alt_text": "Person in a pastel pink tee sitting on a dock at a lake.",
+          "aspect": "3:2",
+          "prompt": "Lifestyle photo: a person in a pastel pink t-shirt sitting on a wooden dock at a calm lake, pastel teal water, soft hazy sunset sky in peach and lavender, photorealistic, no text, no logos."
+        }
+      ],
+      "rights": {
+        "license_type": "ugc",
+        "licensor": "@lakeside.sam",
+        "channels": [
+          "instagram_square"
+        ],
+        "valid_from": "2026-05-01",
+        "expires_on": "2026-12-31",
+        "model_release_required": true,
+        "model_release_on_file": true,
+        "notes": "Customer photo, reshare permission by DM."
+      }
+    },
+    {
+      "key": "headlamp",
+      "title": "Beacon headlamp",
+      "description": "Product in use shot of the Beacon headlamp on an evening trail.",
+      "tags": [
+        "headlamp",
+        "product",
+        "fall"
+      ],
+      "owner": "leo@northwind.example",
+      "versions": [
+        {
+          "filename": "beacon-headlamp.jpg",
+          "alt_text": "Hiker wearing a headlamp on a forest trail at twilight.",
+          "aspect": "4:5",
+          "prompt": "Outdoor gear photo: a hiker wearing a compact headlamp with a warm beam on a pine forest trail at twilight, granite rocks, deep blue-grey tones with a warm light accent, photorealistic, no text, no logos."
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "asset": "ridge-jacket",
+      "version": 1,
+      "started_by": "leo@northwind.example",
+      "annotations": [
+        {
+          "by": "maya@northwind.example",
+          "x_pct": 50,
+          "y_pct": 18,
+          "body": "Face is a bit dark, can we lift the shadows?"
+        },
+        {
+          "by": "maya@northwind.example",
+          "x_pct": 48,
+          "y_pct": 46,
+          "body": "Zipper pull reads well here, keep it."
+        }
+      ],
+      "decision": {
+        "by": "maya@northwind.example",
+        "decision": "request_changes",
+        "note": "Lift shadows on the face, then good to go."
+      },
+      "resubmit_version": 2,
+      "then": {
+        "decision": null
+      }
+    },
+    {
+      "asset": "basecamp-tent",
+      "version": 1,
+      "started_by": "ana@northwind.example",
+      "annotations": [
+        {
+          "by": "sam@northwind.example",
+          "x_pct": 40,
+          "y_pct": 55,
+          "body": "Nice glow. Horizon is level."
+        }
+      ],
+      "decision": {
+        "by": "sam@northwind.example",
+        "decision": "approve",
+        "note": ""
+      }
+    },
+    {
+      "asset": "trail-boots",
+      "version": 1,
+      "started_by": "leo@northwind.example",
+      "annotations": [],
+      "decision": {
+        "by": "maya@northwind.example",
+        "decision": "approve",
+        "note": "Clean."
+      }
+    },
+    {
+      "asset": "summit-pack",
+      "version": 1,
+      "started_by": "leo@northwind.example",
+      "annotations": [],
+      "decision": {
+        "by": "sam@northwind.example",
+        "decision": "approve",
+        "note": ""
+      }
+    },
+    {
+      "asset": "family-hike",
+      "version": 1,
+      "started_by": "ana@northwind.example",
+      "annotations": [
+        {
+          "by": "maya@northwind.example",
+          "x_pct": 72,
+          "y_pct": 30,
+          "body": "Can we check model releases for the kids?"
+        }
+      ],
+      "decision": null
+    },
+    {
+      "asset": "glacier-fleece",
+      "version": 2,
+      "started_by": "leo@northwind.example",
+      "annotations": [],
+      "decision": {
+        "by": "sam@northwind.example",
+        "decision": "approve",
+        "note": "v2 layering reads better."
+      }
+    },
+    {
+      "asset": "neon-night-run",
+      "version": 1,
+      "started_by": "leo@northwind.example",
+      "annotations": [
+        {
+          "by": "priya@northwind.example",
+          "x_pct": 50,
+          "y_pct": 50,
+          "body": "Colors are far off the palette."
+        }
+      ],
+      "decision": {
+        "by": "priya@northwind.example",
+        "decision": "request_changes",
+        "note": "Off brand palette."
+      }
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "Trailhead Fall 2026",
+      "brief": "Fall launch for insulated layers and camp gear. Channels: Instagram, Stories, web banner, email.",
+      "due_date": "2026-11-02",
+      "created_by": "priya@northwind.example",
+      "deliverables": [
+        {
+          "asset": "basecamp-tent",
+          "channel": "instagram_square"
+        },
+        {
+          "asset": "basecamp-tent",
+          "channel": "web_banner"
+        },
+        {
+          "asset": "trail-boots",
+          "channel": "instagram_square"
+        },
+        {
+          "asset": "summit-pack",
+          "channel": "email_header"
+        },
+        {
+          "asset": "glacier-fleece",
+          "channel": "story"
+        },
+        {
+          "asset": "ridge-jacket",
+          "channel": "story"
+        }
+      ]
+    },
+    {
+      "name": "Night Trails teaser",
+      "brief": "Short teaser for the headlamp line. On hold until creative is on palette.",
+      "due_date": "2026-12-01",
+      "created_by": "priya@northwind.example",
+      "deliverables": [
+        {
+          "asset": "neon-night-run",
+          "channel": "story"
+        },
+        {
+          "asset": "headlamp",
+          "channel": "instagram_square"
+        }
+      ]
+    }
+  ]
+}
