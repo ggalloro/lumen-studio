@@ -98,13 +98,21 @@ export function LoginPage() {
               void signIn(email.trim(), password);
             }}
           >
-            <TextField label="Email" type="email" value={email} onChange={setEmail} autoComplete="username" />
+            <TextField
+              label="Email"
+              type="email"
+              value={email}
+              onChange={setEmail}
+              autoComplete="username"
+              data-testid="email"
+            />
             <TextField
               label="Password"
               type="password"
               value={password}
               onChange={setPassword}
               autoComplete="current-password"
+              data-testid="password"
               description={`Sample users share the password ${SEED_PASSWORD}`}
             />
             <ErrorMessage error={error} title="Sign in failed" />

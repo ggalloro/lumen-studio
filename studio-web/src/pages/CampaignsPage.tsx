@@ -75,7 +75,7 @@ function CampaignRow({ campaign }: { campaign: Campaign }) {
     >
       <Flex alignItems="center" gap="size-300" wrap>
         <Flex direction="column" gap="size-50" flex="1 1 240px">
-          <Link to={`/campaigns/${campaign.id}`} className="text-link campaign-name">
+          <Link to={`/campaigns/${campaign.id}`} className="text-link campaign-name" data-testid="campaign-link">
             {campaign.name}
           </Link>
           <Text UNSAFE_className="muted">Due {formatDate(campaign.due_date)}</Text>

@@ -10,9 +10,9 @@ import { AppTile } from './AppTile';
 import { UserAvatar } from './UserAvatar';
 
 const NAV = [
-  { to: '/library', label: 'Library' },
-  { to: '/campaigns', label: 'Campaigns' },
-  { to: '/brand', label: 'Brand Kit' },
+  { to: '/library', label: 'Library', testId: 'nav-library' },
+  { to: '/campaigns', label: 'Campaigns', testId: 'nav-campaigns' },
+  { to: '/brand', label: 'Brand Kit', testId: 'nav-brand-kit' },
 ];
 
 export function AppShell() {
@@ -48,7 +48,7 @@ export function AppShell() {
           )}
           <nav className="main-nav" aria-label="Main">
             {NAV.map((item) => (
-              <NavLink key={item.to} to={item.to} className="main-nav-link">
+              <NavLink key={item.to} to={item.to} className="main-nav-link" data-testid={item.testId}>
                 {item.label}
               </NavLink>
             ))}
@@ -69,7 +69,9 @@ export function AppShell() {
               </ActionButton>
               <Menu onAction={(key) => key === 'signout' && signOut()}>
                 <Section title={`${user.name} (${ROLE_LABELS[user.role] ?? user.role})`}>
-                  <Item key="signout">Sign out</Item>
+                  <Item key="signout" data-testid="sign-out">
+                    Sign out
+                  </Item>
                 </Section>
               </Menu>
             </MenuTrigger>

@@ -61,11 +61,21 @@ export function AssetPage() {
         onSelectionChange={(k) => update({ tab: String(k) })}
       >
         <TabList>
-          <Item key="versions">Versions</Item>
-          <Item key="renditions">Renditions</Item>
-          <Item key="brand">Brand check</Item>
-          <Item key="rights">Rights</Item>
-          <Item key="reviews">Reviews</Item>
+          <Item key="versions" data-testid="tab-versions">
+            Versions
+          </Item>
+          <Item key="renditions" data-testid="tab-renditions">
+            Renditions
+          </Item>
+          <Item key="brand" data-testid="tab-brand-check">
+            Brand check
+          </Item>
+          <Item key="rights" data-testid="tab-rights">
+            Rights
+          </Item>
+          <Item key="reviews" data-testid="tab-reviews">
+            Reviews
+          </Item>
         </TabList>
         <TabPanels UNSAFE_className="asset-tab-panels">
           <Item key="versions">

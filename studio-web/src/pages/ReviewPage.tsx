@@ -154,6 +154,7 @@ export function ReviewPage() {
                       setPending(null);
                       setComment('');
                     }}
+                    data-testid="comment-cancel"
                   >
                     Cancel
                   </Button>
@@ -179,7 +180,13 @@ export function ReviewPage() {
                 <Heading level={3} margin={0}>
                   Decision
                 </Heading>
-                <TextArea label="Note (optional)" value={note} onChange={setNote} width="100%" />
+                <TextArea
+                  label="Note (optional)"
+                  value={note}
+                  onChange={setNote}
+                  width="100%"
+                  data-testid="decision-note"
+                />
                 <ErrorMessage error={decisionError} title="Decision not recorded" />
                 <Flex gap="size-100" wrap>
                   <Button

@@ -175,7 +175,7 @@ function BrandKitForm({
       }}
       data-testid="brand-form"
     >
-      <TextField label="Name" value={name} onChange={setName} isRequired />
+      <TextField label="Name" value={name} onChange={setName} isRequired data-testid="brand-name" />
       <View>
         <Text UNSAFE_className="field-label">Palette</Text>
         <Flex direction="column" gap="size-100" marginTop="size-50">
@@ -190,6 +190,7 @@ function BrandKitForm({
                 value={c.name}
                 onChange={(v) => updateColor(i, { name: v })}
                 placeholder="Name"
+                data-testid={`brand-colour-${i + 1}-name`}
               />
               <TextField
                 aria-label={`Colour ${i + 1} hex`}
@@ -197,18 +198,23 @@ function BrandKitForm({
                 onChange={(v) => updateColor(i, { hex: v })}
                 validationState={HEX.test(c.hex) ? undefined : 'invalid'}
                 width="size-1600"
+                data-testid={`brand-colour-${i + 1}-hex`}
               />
               <ActionButton
                 isQuiet
                 aria-label={`Remove colour ${i + 1}`}
                 onPress={() => setPalette((p) => p.filter((_, j) => j !== i))}
+                data-testid={`brand-remove-colour-${i + 1}`}
               >
                 <Delete />
               </ActionButton>
             </Flex>
           ))}
           <View>
-            <ActionButton onPress={() => setPalette((p) => [...p, { name: '', hex: '#000000' }])}>
+            <ActionButton
+              onPress={() => setPalette((p) => [...p, { name: '', hex: '#000000' }])}
+              data-testid="brand-add-colour"
+            >
               <Add />
               <Text>Add colour</Text>
             </ActionButton>
@@ -221,13 +227,20 @@ function BrandKitForm({
         onChange={setTolerance}
         minValue={0}
         maxValue={100}
+        data-testid="brand-palette-tolerance"
       />
-      <TextField label="Fonts" description="Comma separated" value={fonts} onChange={setFonts} />
-      <TextArea label="Tone of voice" value={tone} onChange={setTone} />
-      <TextArea label="Logo rules" value={logoRules} onChange={setLogoRules} />
+      <TextField
+        label="Fonts"
+        description="Comma separated"
+        value={fonts}
+        onChange={setFonts}
+        data-testid="brand-fonts"
+      />
+      <TextArea label="Tone of voice" value={tone} onChange={setTone} data-testid="brand-tone" />
+      <TextArea label="Logo rules" value={logoRules} onChange={setLogoRules} data-testid="brand-logo-rules" />
       <ErrorMessage error={error} title="Brand kit not saved" />
       <Flex gap="size-100">
-        <Button variant="secondary" onPress={onCancel} isDisabled={busy}>
+        <Button variant="secondary" onPress={onCancel} isDisabled={busy} data-testid="brand-cancel">
           Cancel
         </Button>
         <Button variant="accent" type="submit" isPending={busy} isDisabled={invalidHex} data-testid="brand-save">

@@ -85,7 +85,7 @@ export function VersionsTab({ asset, versions, selected, onSelect, onUploaded }:
           <LabeledValue label="Alt text" value={selected.alt_text || 'None'} />
         </Flex>
         <Text>
-          <a href={blobSrc(selected.blob_url, true)} className="text-link">
+          <a href={blobSrc(selected.blob_url, true)} className="text-link" data-testid="download-original">
             Download original
           </a>
         </Text>

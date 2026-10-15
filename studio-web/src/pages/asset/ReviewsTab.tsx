@@ -85,7 +85,7 @@ export function ReviewsTab({ asset, selectedVersion }: ReviewsTabProps) {
           {list.map((r) => (
             <Well key={r.id} data-testid="review-row">
               <Flex alignItems="center" gap="size-300" wrap>
-                <Link to={`/reviews/${r.id}`} className="text-link">
+                <Link to={`/reviews/${r.id}`} className="text-link" data-testid={`review-link-${r.id}`}>
                   Review #{r.id}
                 </Link>
                 <Text>Version {r.version}</Text>
