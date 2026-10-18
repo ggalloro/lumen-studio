@@ -15,17 +15,17 @@ Eight services, four languages, one SQLite database per service. Services talk o
 ```mermaid
 flowchart TB
     user(["Browser"])
-    web["<b>studio-web</b> :3000<br/>TypeScript · React Spectrum"]
+    web["studio-web<br/>:3000<br/>TypeScript<br/>React Spectrum"]
 
     subgraph backends["Backend services · HTTP/JSON · JWT auth · one SQLite database each"]
-        direction TB
-        identity["<b>identity</b> :8081<br/>Python · FastAPI<br/><i>users.db</i>"]
-        campaigns["<b>campaigns</b> :8086<br/>Python · Flask<br/><i>campaigns.db</i>"]
-        review["<b>review</b> :8084<br/>TypeScript · Fastify<br/><i>review.db</i>"]
-        brand["<b>brand-check</b> :8085<br/>Python · FastAPI<br/><i>brand.db</i>"]
-        rights["<b>rights</b> :8087<br/>Java 11 · Spring Boot 2.7<br/><i>rights.db</i>"]
-        assets["<b>assets</b> :8082<br/>Java 21 · Spring Boot 3<br/><i>assets.db + blob files</i>"]
-        renditions["<b>renditions</b> :8083<br/>Go<br/><i>stateless</i>"]
+        direction LR
+        identity["identity<br/>:8081<br/>Python<br/>FastAPI<br/>users.db"]
+        campaigns["campaigns<br/>:8086<br/>Python<br/>Flask<br/>campaigns.db"]
+        review["review<br/>:8084<br/>TypeScript<br/>Fastify<br/>review.db"]
+        brand["brand-check<br/>:8085<br/>Python<br/>FastAPI<br/>brand.db"]
+        rights["rights<br/>:8087<br/>Java 11<br/>Spring Boot 2.7<br/>rights.db"]
+        assets["assets<br/>:8082<br/>Java 21<br/>Spring Boot 3<br/>assets.db + files"]
+        renditions["renditions<br/>:8083<br/>Go<br/>stateless"]
     end
 
     user --> web
